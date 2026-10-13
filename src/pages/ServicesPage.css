@@ -1,0 +1,138 @@
+.services-page {
+  background-color: #ffffff;
+}
+
+.services-main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.service-detail-card {
+  padding: 2.25rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.service-icon-box {
+  width: 58px;
+  height: 58px;
+  border-radius: var(--radius-md);
+  background: var(--primary-light);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card-title {
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.service-card-desc {
+  font-size: 0.925rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.service-highlights-box {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.hl-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-dark);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.75rem;
+}
+
+.hl-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hl-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.flex-shrink {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.service-card-footer {
+  margin-top: auto;
+}
+
+/* Bottom CTA Banner */
+.services-cta-banner {
+  background: linear-gradient(135deg, #075985 0%, #0284c7 100%);
+  color: #ffffff;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border: none;
+}
+
+.services-cta-banner .badge-tag {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.cta-left h3 {
+  color: #ffffff;
+  font-size: 1.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-left p {
+  color: #e0f2fe;
+  font-size: 1rem;
+  max-width: 680px;
+}
+
+@media (max-width: 992px) {
+  .services-main-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .services-cta-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .services-main-grid {
+    grid-template-columns: 1fr;
+  }
+  .services-cta-banner {
+    padding: 2rem 1.5rem;
+  }
+}
